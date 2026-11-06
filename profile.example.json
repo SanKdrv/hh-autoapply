@@ -1,0 +1,48 @@
+{
+  "full_name": "Иван Иванов",
+  "first_name": "Иван",
+  "age": 25,
+  "location": "Москва",
+  "position": "Backend-разработчик (Python/Go)",
+  "remote_only": true,
+  "experience_years": 3,
+  "thesis": "Дипломная работа — RAG-система рекомендаций (retrieval, эмбеддинги, векторный поиск).",
+  "stack_notes": "Основной веб-фреймворк — FastAPI. Опыт с Go, PostgreSQL, ClickHouse, Docker.",
+  "contacts": {
+    "phone": "+7 (900) 000-00-00",
+    "email": "you@example.com",
+    "telegram": "@your_telegram"
+  },
+  "summary": "Backend-разработчик с опытом 3 года. Python и Go, распределённые системы, обработка данных.",
+  "stack_bullets": {
+    "go": [
+      "Спроектировал и реализовал микросервисы на Go с контрактами gRPC/protobuf."
+    ],
+    "python": [
+      "Вывел в продакшен сервис на FastAPI (PostgreSQL, Redis, Docker, Nginx)."
+    ],
+    "php": [],
+    "node": [],
+    "infra": [
+      "Docker и Docker Compose, Nginx, CI/CD, Prometheus/Grafana."
+    ]
+  },
+  "stack_summary": {
+    "go": "Go (go-chi, sqlx, protobuf)",
+    "python": "Python (FastAPI, SQLAlchemy, asyncio, pytest)",
+    "php": "PHP (Yii2)",
+    "node": "Vue 3 + TypeScript",
+    "infra": "PostgreSQL, ClickHouse, NATS, Redis, Docker, Nginx, Grafana"
+  },
+  "pet_projects": [
+    "Пример пет-проекта — CLI-утилита на Python. https://github.com/example/project"
+  ],
+  "education": [],
+  "highlights": [
+    "Есть коммерческий опыт в продакшене, а не только учебные проекты."
+  ],
+  "ai_tools": [
+    "Claude Code",
+    "OpenCode Go"
+  ]
+}

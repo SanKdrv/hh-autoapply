@@ -1,0 +1,670 @@
+{
+  "host": "petrozavodsk.hh.ru",
+  "api_base": "https://api.hh.ru",
+  "search_pages": 4,
+  "topics_pages": 3,
+  "search_via_browser": true,
+  "no_contact_companies": [],
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+  "boards": {
+    "enabled": [
+      "hh",
+      "habr",
+      "superjob"
+    ],
+    "habr": {
+      "title": "Хабр Карьера",
+      "host": "career.habr.com",
+      "profile_dir": "data/browser-profile-habr",
+      "search_pages": 5,
+      "searches": [
+        {
+          "name": "Python backend",
+          "enabled": true,
+          "text": "python backend",
+          "funnel": "Python"
+        },
+        {
+          "name": "Python-разработчик",
+          "enabled": true,
+          "text": "python разработчик",
+          "funnel": "Python"
+        },
+        {
+          "name": "Golang",
+          "enabled": true,
+          "text": "golang",
+          "funnel": "Go"
+        },
+        {
+          "name": "Backend",
+          "enabled": true,
+          "text": "backend",
+          "funnel": "Backend"
+        },
+        {
+          "name": "FastAPI",
+          "enabled": true,
+          "text": "fastapi",
+          "funnel": "Python"
+        },
+        {
+          "name": "Django",
+          "text": "django",
+          "funnel": "Python",
+          "enabled": true
+        },
+        {
+          "name": "PostgreSQL",
+          "text": "postgresql",
+          "funnel": "Backend",
+          "enabled": true
+        },
+        {
+          "name": "Микросервисы",
+          "text": "микросервисы",
+          "funnel": "Backend",
+          "enabled": true
+        },
+        {
+          "name": "Разработчик Python",
+          "text": "разработчик python",
+          "funnel": "Python",
+          "enabled": true
+        },
+        {
+          "name": "Golang backend",
+          "text": "golang backend",
+          "funnel": "Go",
+          "enabled": true
+        }
+      ],
+      "rate_limits": {
+        "daily_cap": 25,
+        "max_per_run": 10,
+        "min_delay_sec": 60,
+        "max_delay_sec": 180,
+        "work_hours": [
+          9,
+          22
+        ]
+      }
+    },
+    "superjob": {
+      "title": "SuperJob",
+      "host": "www.superjob.ru",
+      "profile_dir": "data/browser-profile-superjob",
+      "search_pages": 2,
+      "searches": [
+        {
+          "name": "Python-разработчик",
+          "enabled": true,
+          "text": "python разработчик",
+          "funnel": "Python"
+        },
+        {
+          "name": "Python",
+          "enabled": true,
+          "text": "python",
+          "funnel": "Python"
+        },
+        {
+          "name": "Backend",
+          "enabled": true,
+          "text": "backend разработчик",
+          "funnel": "Backend"
+        },
+        {
+          "name": "Golang",
+          "enabled": true,
+          "text": "golang",
+          "funnel": "Go"
+        }
+      ],
+      "rate_limits": {
+        "daily_cap": 15,
+        "max_per_run": 6,
+        "min_delay_sec": 60,
+        "max_delay_sec": 180,
+        "work_hours": [
+          9,
+          22
+        ]
+      }
+    }
+  },
+  "searches": [
+    {
+      "name": "Go backend — удалёнка",
+      "enabled": true,
+      "text": "Golang OR \"Go разработчик\" OR \"Go backend\"",
+      "area": "113",
+      "experience": "between1And3",
+      "schedule": "remote",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "Go backend — Санкт-Петербург",
+      "enabled": true,
+      "text": "Golang OR \"Go разработчик\" OR \"Go backend\"",
+      "area": "2",
+      "experience": "between1And3",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "Python backend — удалёнка",
+      "enabled": true,
+      "text": "Python backend OR FastAPI OR \"Python разработчик\"",
+      "area": "113",
+      "experience": "between1And3",
+      "schedule": "remote",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "Python backend — Санкт-Петербург",
+      "enabled": true,
+      "text": "Python backend OR FastAPI OR \"Python разработчик\"",
+      "area": "2",
+      "experience": "between1And3",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "Go + Python — удалёнка",
+      "enabled": true,
+      "text": "\"Go\" \"Python\" backend микросервис",
+      "area": "113",
+      "experience": "between1And3",
+      "schedule": "remote",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "Go + Python — Санкт-Петербург",
+      "enabled": true,
+      "text": "\"Go\" \"Python\" backend микросервис",
+      "area": "2",
+      "experience": "between1And3",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "PHP / WordPress backend — удалёнка",
+      "enabled": true,
+      "text": "PHP WordPress WooCommerce OR \"PHP разработчик\"",
+      "area": "113",
+      "experience": "between1And3",
+      "schedule": "remote",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "PHP / WordPress backend — Санкт-Петербург",
+      "enabled": true,
+      "text": "PHP WordPress WooCommerce OR \"PHP разработчик\"",
+      "area": "2",
+      "experience": "between1And3",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "Python Django/DRF — удалёнка",
+      "enabled": true,
+      "text": "Django OR \"Django Rest Framework\" OR DRF backend",
+      "area": "113",
+      "experience": "between1And3",
+      "schedule": "remote",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "Python FastAPI/asyncio — удалёнка",
+      "enabled": true,
+      "text": "FastAPI OR asyncio OR \"async python\"",
+      "area": "113",
+      "experience": "between1And3",
+      "schedule": "remote",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "Backend (широкий) — удалёнка",
+      "enabled": true,
+      "text": "\"backend разработчик\" OR \"backend developer\"",
+      "area": "113",
+      "experience": "between1And3",
+      "schedule": "remote",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "Python (широкий) — удалёнка",
+      "enabled": true,
+      "text": "Python OR FastAPI OR Django OR Flask",
+      "area": "113",
+      "schedule": "remote",
+      "experience": "between1And3",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "Backend developer — удалёнка",
+      "enabled": true,
+      "text": "\"backend developer\" OR \"backend разработчик\" OR \"бэкенд разработчик\"",
+      "area": "113",
+      "schedule": "remote",
+      "experience": "between1And3",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "Node / TypeScript backend",
+      "enabled": true,
+      "text": "Node.js OR NestJS OR \"TypeScript backend\"",
+      "area": "113",
+      "schedule": "remote",
+      "experience": "between1And3",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "DevOps / SRE Python",
+      "enabled": true,
+      "text": "DevOps Python OR SRE OR \"инженер по автоматизации\"",
+      "area": "113",
+      "schedule": "remote",
+      "experience": "between1And3",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "Rust backend",
+      "enabled": true,
+      "text": "Rust OR \"Rust разработчик\"",
+      "area": "113",
+      "schedule": "remote",
+      "experience": "between1And3",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "Go — Россия",
+      "enabled": true,
+      "text": "Golang OR \"Go developer\" OR \"Go-разработчик\"",
+      "area": "113",
+      "schedule": "remote",
+      "experience": "between1And3",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "AI / вайбкодинг — удалёнка",
+      "enabled": true,
+      "text": "\"AI-разработчик\" OR \"AI Developer\" OR \"AI Engineer\" OR \"AI инженер\" OR \"LLM-разработчик\" OR \"Prompt Engineer\" OR \"вайбкод\" OR \"вайбкодер\" OR \"разработчик ИИ\" OR \"AI-инженер\"",
+      "area": "113",
+      "schedule": "remote",
+      "experience": "between1And3",
+      "order_by": "publication_time"
+    },
+    {
+      "name": "AI / вайбкодинг — Россия",
+      "enabled": true,
+      "text": "\"AI-разработчик\" OR \"AI Developer\" OR \"AI Engineer\" OR \"AI инженер\" OR \"LLM-разработчик\" OR \"Prompt Engineer\" OR \"вайбкод\" OR \"вайбкодер\" OR \"разработчик ИИ\" OR \"AI-инженер\"",
+      "area": "113",
+      "experience": "between1And3",
+      "order_by": "publication_time"
+    }
+  ],
+  "filters": {
+    "min_score": 14,
+    "require_title_any": [
+      "разработчик",
+      "developer",
+      "программист",
+      "backend",
+      "бэкенд",
+      "fullstack",
+      "full-stack",
+      "full stack",
+      "golang",
+      "go-",
+      "go ",
+      "python",
+      "php",
+      "software engineer",
+      "программист-"
+    ],
+    "require_any_stack": [
+      "go",
+      "golang",
+      "python",
+      "php",
+      "fastapi",
+      "yii",
+      "woocommerce",
+      "wordpress",
+      "backend",
+      "бэкенд",
+      "микросервис"
+    ],
+    "exclude_title": [
+      "1с",
+      "1c",
+      "qa",
+      "тестировщик",
+      "тест-инженер",
+      "автотест",
+      "sdet",
+      "devops",
+      "sysadmin",
+      "администратор",
+      "системный инженер",
+      "верстальщик",
+      "менеджер",
+      "маркетолог",
+      "smm",
+      "продавец",
+      "стажер",
+      "intern",
+      "trainee",
+      "аналитик",
+      "data scientist",
+      "ml engineer",
+      "руководитель",
+      "директор",
+      "head of",
+      "рекрутер",
+      "recruiter",
+      "hr ",
+      "подбор персонала",
+      "репетитор",
+      "преподаватель",
+      "учитель",
+      "tutor",
+      "appsec",
+      "информационной безопасност",
+      "поддержк",
+      "support",
+      "техподдержк",
+      "бухгалтер",
+      "юрист",
+      "дизайнер",
+      "курьер",
+      "водитель",
+      "оператор",
+      "консультант",
+      "seo",
+      "sale",
+      "аккаунт-менеджер",
+      "продакт",
+      "product manager",
+      "проект-менеджер",
+      "senior",
+      "ведущий",
+      "старший",
+      "lead",
+      "principal",
+      "staff engineer",
+      "встраиваем",
+      "embedded",
+      "микроконтроллер",
+      "fpga",
+      "асутп",
+      "scada",
+      "робототехник",
+      "aqa",
+      "тестирован",
+      "android",
+      "ios",
+      "мобильн"
+    ],
+    "exclude_company": [
+      "Fortune"
+    ],
+    "exclude_text": [],
+    "skip_if_test": false
+  },
+  "salary": {
+    "remote_min_net": 80000,
+    "relocate_min_gross": 180000,
+    "ndfl": 0.13,
+    "mode": "floor",
+    "unknown": "keep",
+    "exempt_funnels": [
+      "AI"
+    ]
+  },
+  "dialog": {
+    "enabled": true,
+    "mode": "approve",
+    "max_tokens": 1200,
+    "salary": {
+      "floor_net": 80000,
+      "hard_cap_net": 400000,
+      "max_uplift": 0.25,
+      "default_range": [
+        140000,
+        250000
+      ]
+    },
+    "auto_reply": {
+      "enabled": true,
+      "max_per_chat": 8
+    }
+  },
+  "diagnostics": {
+    "enabled": true,
+    "tail_lines": 150,
+    "hour": 21,
+    "max_tokens": 1200,
+    "send_ok": false
+  },
+  "scoring": {
+    "must_have": [
+      "go",
+      "golang",
+      "python"
+    ],
+    "strong": [
+      "микросервис",
+      "microservice",
+      "nats",
+      "clickhouse",
+      "grpc",
+      "protobuf",
+      "docker",
+      "kubernetes",
+      "k8s",
+      "postgres",
+      "postgresql",
+      "rest api",
+      "highload",
+      "высоконагруж",
+      "kafka",
+      "redis",
+      "websocket",
+      "ci/cd",
+      "gitlab ci",
+      "sql",
+      "очереди",
+      "message queue",
+      "распределен",
+      "ai",
+      "llm",
+      "gpt",
+      "prompt",
+      "нейросет",
+      "вайбкод",
+      "rag",
+      "langchain",
+      "openai",
+      "claude",
+      "cursor"
+    ],
+    "medium": [
+      "fastapi",
+      "flask",
+      "asyncio",
+      "sqlalchemy",
+      "php",
+      "yii",
+      "wordpress",
+      "woocommerce",
+      "node.js",
+      "linux",
+      "nginx",
+      "prometheus",
+      "grafana",
+      "oracle",
+      "docker-compose",
+      "vue",
+      "rest",
+      "api"
+    ],
+    "negative": [
+      "senior",
+      "lead",
+      "team lead",
+      "tech lead",
+      "5+ лет",
+      "более 5 лет",
+      "7 лет",
+      "10 лет"
+    ],
+    "title_bonus": [
+      "go",
+      "golang",
+      "python",
+      "backend",
+      "бэкенд",
+      "разработчик",
+      "ai",
+      "llm",
+      "gpt",
+      "prompt",
+      "нейросет",
+      "вайбкод"
+    ],
+    "stack_keywords": {
+      "go": [
+        "go",
+        "golang",
+        "goroutine",
+        "голанг"
+      ],
+      "python": [
+        "python",
+        "fastapi",
+        "django",
+        "flask",
+        "asyncio",
+        "sqlalchemy",
+        "питон"
+      ],
+      "php": [
+        "php",
+        "yii",
+        "laravel",
+        "symfony",
+        "wordpress",
+        "woocommerce",
+        "битрикс"
+      ],
+      "node": [
+        "node.js",
+        "nodejs",
+        "typescript",
+        "nest",
+        "express"
+      ],
+      "data": [
+        "clickhouse",
+        "kafka",
+        "nats",
+        "etl",
+        "airflow"
+      ]
+    },
+    "test_task_markers": [
+      "тестовое задание",
+      "тестовое",
+      "тестовая задача",
+      "практическое задание",
+      "пробное задание",
+      "домашнее задание",
+      "test task",
+      "take-home"
+    ],
+    "test_task_bonus": 30
+  },
+  "letters": {
+    "max_chars": 1900,
+    "greeting": "Здравствуйте!",
+    "signature_position": "Backend-разработчик (Python/Go)",
+    "include_resume_link": true,
+    "resume_url": "",
+    "time_tracker_ok": false
+  },
+  "ai": {
+    "base_url": "https://opencode.ai/inference/go/v1",
+    "model": "deepseek-v4.1-flash",
+    "api_key": "",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "session_header": "auto",
+    "temperature": 0.6,
+    "max_tokens": 1600,
+    "timeout_sec": 120,
+    "empty_reply_retries": 3
+  },
+  "rate_limits": {
+    "daily_cap": 30,
+    "ai_daily_cap": 25,
+    "max_per_run": 15,
+    "min_delay_sec": 45,
+    "max_delay_sec": 75,
+    "cooldown_every": 10,
+    "cooldown_sec": 600,
+    "work_hours": [
+      9,
+      22
+    ]
+  },
+  "browser": {
+    "name": "edge",
+    "use_system_profile": false,
+    "system_profile_dir": "~/Library/Application Support/Microsoft Edge",
+    "profile_directory": "Default",
+    "profile_dir": "data/browser-profile",
+    "headless": false,
+    "debug_port": 0,
+    "reuse": false,
+    "hidden": true,
+    "accept_language": "ru-RU,ru",
+    "login_timeout_sec": 300,
+    "page_load_timeout_sec": 45,
+    "keep_open": false
+  },
+  "notify": {
+    "telegram": {
+      "enabled": true,
+      "bot_token": "",
+      "bot_token_env": "TELEGRAM_BOT_TOKEN",
+      "chat_id": "",
+      "chat_id_env": "TELEGRAM_CHAT_ID"
+    }
+  },
+  "schedule": {
+    "every_hours": 4,
+    "start_hour": 10,
+    "apply_limit": 12,
+    "prevent_sleep": true,
+    "prevent_sleep_on_battery": false,
+    "apply_only_on_ac": true
+  },
+  "captcha": {
+    "try_ai": true,
+    "ai_max_tokens": 2000,
+    "manual_timeout_sec": 1800,
+    "poll_sec": 5,
+    "notify_screenshot": true,
+    "ai_attempts": 2,
+    "cooldown_sec": 240,
+    "max_per_run": 2
+  },
+  "paths": {
+    "db": "data/state.sqlite3",
+    "letters_dir": "letters",
+    "out_dir": "out",
+    "cache_dir": "data/cache",
+    "debug_dir": "out/debug"
+  },
+  "forms": {
+    "answer_max_tokens": 6000
+  }
+}
